@@ -41,8 +41,8 @@ function Footer({ use, setUse }) {
                 onClick={() => setUse("package")}
                 className={({ isActive }) =>
                   `${
-                    isActive && use === "package"
-                      ? "text-orange-600 underline"
+                    isActive 
+                      ? "text-orange-600 "
                       : "text-white"
                   } hover:text-orange-600`
                 }

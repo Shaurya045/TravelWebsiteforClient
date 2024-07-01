@@ -2,7 +2,7 @@ import React from "react";
 import { homeImages } from "../assets/assets";
 import Button from "./Button";
 
-function Header() {
+function Header({use,setUse}) {
   return (
     <div>
       <div className="relative w-full h-[700px] overflow-hidden">
@@ -13,7 +13,7 @@ function Header() {
             madhovari is your new travel companion, we'll help you select the
             best destinations to travel and be with you throughout your trip.
           </p>
-          <Button value="BOOK NOW"/>
+          <Button value="BOOK NOW" use={use} setUse={setUse}/>
         </div>
       </div>
     </div>

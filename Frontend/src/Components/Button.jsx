@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-function Button({value}) {
+function Button({ value, use, setUse }) {
   return (
-        <button className='bg-blue-950 text-white h-[60px] w-[150px] rounded-[15px] text-[20px] font-[400]'>{value}</button>
-  )
+    <div>
+      <Link to="/package" onClick={() => setUse("package")}>
+      <button className="bg-blue-950 text-white h-[60px] w-[150px] rounded-[25px] text-[20px] font-[400]">
+        {value}
+      </button>
+      </Link>
+    </div>
+  );
 }
 
-export default Button
+export default Button;

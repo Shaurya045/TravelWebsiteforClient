@@ -5,10 +5,10 @@ import About from "../Components/About";
 import ExplorePackage from "../Components/ExplorePackage";
 import Contact from "../Components/Contact";
 
-function Home() {
+function Home({use,setUse}) {
   return (
     <div>
-      <Header />
+      <Header use={use} setUse={setUse} />
       <ExplorePackage />
       <Testimonial />
       <About />

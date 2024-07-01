@@ -3,13 +3,12 @@ import Button from "./Button";
 import { Link, NavLink } from "react-router-dom";
 
 function Navbar({use,setUse}) {
-//   const [use, setUse] = useState("home");
   return (
-    <div className="flex justify-between bg-blue-400 h-[60px] px-[17px] mx-[120px] mt-[30px] rounded-[10px] items-center z-50">
+    <div className="relative flex justify-between h-[60px] px-[17px] mx-[120px] mt-[30px] rounded-[10px] items-center z-50">
       <Link to="/" onClick={() => setUse("home")}>
         <img src="" alt="LOGO" />
       </Link>
-        <ul className="flex justify-between items-center px-[40px] bg-white h-full rounded-[10px] w-[750px] text-[20px] font-[400]">
+        <ul className="flex justify-between items-center px-[40px] bg-white h-full rounded-[25px] w-[750px] text-[20px] font-[400]">
           <li>
             <NavLink
               to="/"
@@ -35,7 +34,7 @@ function Navbar({use,setUse}) {
               onClick={() => setUse("package")}
               className={({ isActive }) =>
                 `${
-                  isActive && use === "package"
+                  isActive
                     ? "text-orange-600 underline"
                     : "text-gray-500"
                 } hover:text-orange-600`

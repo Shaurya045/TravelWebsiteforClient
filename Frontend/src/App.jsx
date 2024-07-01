@@ -8,11 +8,11 @@ function App() {
   const [use, setUse] = useState("home");
   return (
     <>
-      <div>
-        <Navbar use={use} setUse={setUse} />
-        <Outlet />
+      <Navbar use={use} setUse={setUse} />
+      <div className="absolute top-0">
+        <Outlet use={use} setUse={setUse} />
+        <Footer use={use} setUse={setUse} />
       </div>
-      <Footer use={use} setUse={setUse} />
     </>
   );
 }
