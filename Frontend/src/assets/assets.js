@@ -36,7 +36,7 @@ export const package_list = [
       {
         day: 3,
         title: "Nahargrah Fort & The City Palace",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, voluptates a eum nisi quidem aut ut quod ab.",
+        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, voluptates a eum nisi quidem aut ut quod ab.quos temporibus voluptate laboriosam amet nisi? Soluta, repellat assumenda.",
       },
       {
         day: 4,

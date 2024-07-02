@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 function Footer({ use, setUse }) {
   return (
     <div className="bg-sky-800 pt-[50px] text-[20px] text-white px-[80px] pb-[50px] flex flex-col items-center gap-[20px]">
-      <div className="w-full grid grid-cols-[2fr_0.5fr_1fr_1fr] gap-[80px]">
+      <div className="w-full grid grid-cols-[2fr_0.5fr_1.1fr_1fr] gap-[80px]">
         <p className="text-white text-[50px] font-[600]">madhovari</p>
         <div className="flex flex-col items-start gap-[10px]">
           <h2 className="text-yellow-500 underline underline-offset-[6px] text-[25px]">
