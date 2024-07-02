@@ -16,9 +16,9 @@ function PackageItem() {
                   key={index}
                   className="flex flex-row gap-[40px] items-center justify-center pt-[170px] pb-[90px] px-[130px]"
                 >
-                  <div className="max-w-[25%]">
+                  <div className="w-[300px] h-[470px]">
                     <img
-                      className="w-full rounded-[20px]"
+                      className="w-full h-full object-cover rounded-[20px]"
                       src={item.image}
                       alt=""
                     />
