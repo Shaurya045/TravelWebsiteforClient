@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { package_list } from "../assets/assets";
 import Button from "./Button";
 
 function ExplorePackage() {
-  let box = document.querySelector(".product-container");
+  const [scrollLeft, setScrollLeft] = useState(0);
+  const boxRef = useRef(null);
+
   const btnPressNext = () => {
-    let width = box.clientWidth;
-    box.scrollLeft += width;
+    if (boxRef.current) {
+      let width = boxRef.current.clientWidth;
+      boxRef.current.scrollLeft += width;
+      setScrollLeft(boxRef.current.scrollLeft);
+    }
   };
+
   const btnPressPrev = () => {
-    let width = box.clientWidth;
-    box.scrollLeft -= width;
+    if (boxRef.current) {
+      let width = boxRef.current.clientWidth;
+      boxRef.current.scrollLeft -= width;
+      setScrollLeft(boxRef.current.scrollLeft);
+    }
   };
 
   return (
@@ -30,7 +39,10 @@ function ExplorePackage() {
         >
           <span className="text-[50px] text-black ">&gt;</span>
         </button>
-        <div className="product-container flex justify-between items-center gap-7 text-center mx-[100px] my-[20px] overflow-x-hidden">
+        <div
+          ref={boxRef}
+          className="product-container flex justify-between items-center gap-7 text-center mx-[100px] my-[20px] overflow-x-hidden"
+        >
           {package_list.map((item, index) => {
             return (
               <div key={index} className="relative text-white rounded-[30px] ">

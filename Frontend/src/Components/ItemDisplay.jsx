@@ -13,7 +13,7 @@ function ItemDisplay({id, name, image, description, price, day}) {
             <p className='text-[20px]'>{day}</p>
             <p className='text-[20px]'>${price}</p>
             <Link to={`/packageitem/${id}`}>
-            <button className='w-[170px] h-[40px] text-white bg-sky-800 rounded-[50px]'>BOOK NOW</button></Link>
+            <button className='w-[170px] h-[40px] text-white bg-sky-800 rounded-[50px] duration-[0.5s] hover:scale-[1.05]'>BOOK NOW</button></Link>
         </div>
     </div>
   )

@@ -4,7 +4,7 @@ import Testimonial from "../Components/Testimonial";
 import About from "../Components/About";
 import ExplorePackage from "../Components/ExplorePackage";
 import Contact from "../Components/Contact";
-import { homeImages } from "../assets/assets";
+import { icons } from "../assets/assets";
 import Button from "../Components/Button";
 
 function Home({ use, setUse }) {
@@ -22,7 +22,7 @@ function Home({ use, setUse }) {
         >
           <img
             className="absolute top-[-500px] w-full"
-            src={homeImages.home2}
+            src={icons.home2}
             alt=""
           />
           <div className="absolute flex flex-col items-center top-[80px] left-[30%]">

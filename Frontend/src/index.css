@@ -5,22 +5,44 @@
 @tailwind utilities;
 
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: Outfit;
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    min-height: 100vh;
-  }
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Outfit;
+  scroll-behavior: smooth;
+}
 
-  @keyframes moveline {
-    0%{
-      height: 0;
-    }
-    100%{
-      height: 100%;
-    }
+body {
+  min-height: 100vh;
+}
+
+.timeline::after {
+  opacity: 0;
+  animation: moveline linear forwards;
+  animation-duration: 2s;
+  animation-timeline: view();
+  animation-range: 100px 1800px;
+}
+
+@keyframes moveline {
+  0% {
+    opacity: 1;
+    height: 0;
   }
+  100% {
+    opacity: 1;
+    height: 100%;
+  }
+}
+
+.itinaray-container {
+  z-index: 10;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.itinaray-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

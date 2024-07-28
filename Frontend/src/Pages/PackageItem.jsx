@@ -32,13 +32,13 @@ function PackageItem() {
                     <p className="text-[20px]">{item.day}</p>
                     <p className="text-[20px]">${item.price}</p>
                     <a href="#booknow">
-                      <button className="w-[180px] h-[50px] bg-blue-950 text-white rounded-[25px]">
+                      <button className="w-[180px] h-[50px] bg-blue-950 text-white rounded-[25px] duration-[0.5s] hover:scale-[1.05]">
                         BOOK NOW
                       </button>
                     </a>
                   </div>
                 </div>
-                <Itinerary key={index} id={item._id} itinaray={item.itinerary} />
+                <Itinerary key={index} id={item._id} itinaray={item.itinerary} name={item.name} />
               </div>
             );
           }
