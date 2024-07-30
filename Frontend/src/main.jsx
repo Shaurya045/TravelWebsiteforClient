@@ -11,19 +11,21 @@ import {
 import Packages from "./Pages/Packages.jsx";
 import Home from "./Pages/Home.jsx";
 import PackageItem from "./Pages/PackageItem.jsx";
+import Contact from "./Pages/Contact.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route path="" element={<Home/>}/>
+      <Route path="" element={<Home />} />
       <Route path="package" element={<Packages />} />
-      <Route path="packageitem/:id" element={<PackageItem/>} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="packageitem/:id" element={<PackageItem />} />
     </Route>
   )
-)
+);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

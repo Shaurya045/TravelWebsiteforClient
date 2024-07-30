@@ -41,12 +41,12 @@ function ExplorePackage() {
         </button>
         <div
           ref={boxRef}
-          className="product-container flex justify-between items-center gap-7 text-center mx-[100px] my-[20px] overflow-x-hidden"
+          className="product-container flex justify-between items-center gap-[20px] text-center mx-[100px] my-[20px] overflow-x-hidden overflow-hidden"
         >
           {package_list.map((item, index) => {
             return (
               <div key={index} className="relative text-white rounded-[30px] ">
-                <div className="relative h-[450px] w-[300px] rounded-[30px] ">
+                <div className="relative h-[450px] w-[305px] rounded-[30px] ">
                   <img
                     src={item.image}
                     alt=""

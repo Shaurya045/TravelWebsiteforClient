@@ -3,7 +3,6 @@ import Header from "../Components/Header";
 import Testimonial from "../Components/Testimonial";
 import About from "../Components/About";
 import ExplorePackage from "../Components/ExplorePackage";
-import Contact from "../Components/Contact";
 import { icons } from "../assets/assets";
 import Button from "../Components/Button";
 
@@ -14,7 +13,6 @@ function Home({ use, setUse }) {
       <ExplorePackage />
       <Testimonial />
       <About />
-      <Contact />
       <div className="mx-[100px] my-[80px]">
         <div
           className="relative w-full h-[400px] overflow-hidden bg-gray-300 rounded-[40px] "

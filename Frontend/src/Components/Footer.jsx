@@ -50,7 +50,22 @@ function Footer({ use, setUse }) {
                 Packages
               </NavLink>
             </li>
-            <a
+            <li>
+              <NavLink
+                to="/contact"
+                onClick={() => setUse("contact")}
+                className={({ isActive }) =>
+                  `${
+                    isActive 
+                      ? "text-orange-600 "
+                      : "text-white"
+                  } hover:text-orange-600`
+                }
+              >
+                Contact
+              </NavLink>
+            </li>
+            {/* <a
               href="#contact"
               onClick={() => setUse("contact")}
               className={`${
@@ -58,7 +73,7 @@ function Footer({ use, setUse }) {
               } hover:text-orange-600`}
             >
               Contact
-            </a>
+            </a> */}
           </ul>
         </div>
         <div className="flex flex-col items-start gap-[10px]">

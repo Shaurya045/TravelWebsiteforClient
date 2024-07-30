@@ -43,10 +43,25 @@ function Navbar({use,setUse}) {
               PACKAGES
             </NavLink>
           </li>
-          <a href="#contact" onClick={() => setUse("contact")} className={`${use==="contact"?"text-orange-600 underline"
+          <li>
+            <NavLink
+              to="/contact"
+              onClick={() => setUse("contact")}
+              className={({ isActive }) =>
+                `${
+                  isActive
+                    ? "text-orange-600 underline"
+                    : "text-gray-500"
+                } hover:text-orange-600`
+              }
+            >
+              CONTACT
+            </NavLink>
+          </li>
+          {/* <a href="#contact" onClick={() => setUse("contact")} className={`${use==="contact"?"text-orange-600 underline"
                     : "text-gray-500"} hover:text-orange-600`}>
             CONTACT
-          </a>
+          </a> */}
         </ul>
       <Button value="BOOK NOW"/>
     </div>

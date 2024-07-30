@@ -11,7 +11,7 @@ function App() {
     <>
       <ScrollTop />
       <Navbar use={use} setUse={setUse} />
-      <div className="absolute top-0">
+      <div className="absolute top-0 w-full">
         <Outlet use={use} setUse={setUse} />
         <Footer use={use} setUse={setUse} />
       </div>
