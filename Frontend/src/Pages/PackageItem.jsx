@@ -30,7 +30,7 @@ function PackageItem() {
                     </h2>
                     <p className="text-[20px]">{item.longDescription}</p>
                     <p className="text-[20px]">{item.day}</p>
-                    <p className="text-[20px]">${item.price}</p>
+                    {/* <p className="text-[20px]">${item.price}</p> */}
                     <a href="#booknow">
                       <button className="w-[180px] h-[50px] bg-blue-950 text-white rounded-[25px] duration-[0.5s] hover:scale-[1.05]">
                         BOOK NOW

@@ -24,7 +24,7 @@ function Navbar({use,setUse}) {
               HOME
             </NavLink>
           </li>
-          <a href="#about" onClick={() => setUse("about")} className={`${use==="about"?"text-orange-600 underline"
+          <a href="/#about" onClick={() => setUse("about")} className={`${use==="about"?"text-orange-600 underline"
                     : "text-gray-500"} hover:text-orange-600`}>
             ABOUT
           </a>

@@ -9,8 +9,9 @@ import mumbai from "./Mumbai.jpg";
 import kerela from "./Kerela.jpg";
 import mussoorie from "./Mussoorie.jpg";
 import rishikesh from "./Rishikesh.jpg";
+import rajasthan from "./Rajasthan.jpg";
 
-export const icons = { search_icon, home2, chooseTour };
+export const icons = { search_icon, home2, chooseTour, rajasthan};
 
 export const homeImages = [home, home2, chooseTour];
 

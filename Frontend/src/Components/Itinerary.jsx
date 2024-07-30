@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { icons } from "../assets/assets";
+import { Link } from "react-router-dom";
 
 function Itinerary({ id, itinaray, name }) {
   useEffect(() => {
@@ -90,11 +91,13 @@ function Itinerary({ id, itinaray, name }) {
                 </h2>
               </div>
             </a>
-            <div className="relative w-[200px] h-[60px] bg-red-500 text-center rounded-[20px] cursor-pointer hover:scale-[1.05] duration-[0.5s]">
-              <h2 className="absolute text-[20px] left-[35%] top-[23%] text-white">
-                Email
-              </h2>
-            </div>
+            <Link to={"/contact"}>
+              <div className="relative w-[200px] h-[60px] bg-red-500 text-center rounded-[20px] cursor-pointer hover:scale-[1.05] duration-[0.5s]">
+                <h2 className="absolute text-[20px] left-[35%] top-[23%] text-white">
+                  Email
+                </h2>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
