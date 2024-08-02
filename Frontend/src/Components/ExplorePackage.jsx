@@ -24,7 +24,7 @@ function ExplorePackage() {
 
   return (
     <div className="relative mt-[50px] mx-[5px] mb-[150px] max-w-[1500px]">
-      <h2 className="text-[40px] ml-[6vw] mb-[30px] ">Choose Your Package</h2>
+      <h2 className="text-[40px] ml-[6vw] mb-[30px] font-['Merriweather'] ">Choose Your Package</h2>
 
       <div className="relative overflow-hidden">
         <button
@@ -53,8 +53,8 @@ function ExplorePackage() {
                     className="w-full h-full object-cover rounded-[30px] "
                   />
                 </div>
-                <div className="absolute top-[350px] left-[35px]">
-                  <h2 className="text-[45px]">{item.name}</h2>
+                <div className="absolute top-[350px] left-[20px]">
+                  <h2 className="text-[40px] font-['Merriweather'] ">{item.name}</h2>
                 </div>
               </div>
             );

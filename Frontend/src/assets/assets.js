@@ -2,6 +2,17 @@ import home from "./Home.jpg";
 import home2 from "./Home2.jpg";
 import chooseTour from "./ChooseTour.jpg";
 import search_icon from "./search_icon.png";
+import expertIcon from "./Expert_Icon.png";
+import holidayIcon from "./Holiday_Icon.png";
+import headsetIcon from "./Headset_Icon.png";
+import moneyBagIcon from "./Money_Bag_Icon.png";
+import facebook from "./Facebook_Icon.png";
+import instagram from "./Instagram_Icon.png";
+import xIcon from "./X_Icon.png";
+import linkedin from "./Linkedin_Icon.png";
+import whatsapp from "./WhatsApp_Icon.png";
+import email from "./Email_Icon.png";
+import madhovariLogo from "./madhovari_Logo.png";
 
 import jaipur from "./Jaipur.jpg";
 import banglore from "./Banglore.jpg";
@@ -11,7 +22,64 @@ import mussoorie from "./Mussoorie.jpg";
 import rishikesh from "./Rishikesh.jpg";
 import rajasthan from "./Rajasthan.jpg";
 
-export const icons = { search_icon, home2, chooseTour, rajasthan};
+import uttarakhand1 from "./Uttarakhand1.jpg";
+import uttarakhand2 from "./Uttarakhand2.jpg";
+import uttarakhand3 from "./Uttarakhand3.jpg";
+import uttarakhand4 from "./Uttarakhand4.jpg";
+import uttarakhand5 from "./Uttarakhand5.jpg";
+import kashmir1 from "./Kashmir1.jpg";
+import kashmir2 from "./Kashmir2.jpg";
+import kashmir3 from "./Kashmir3.jpg";
+import kashmir4 from "./Kashmir4.jpg";
+import sikkim1 from "./Sikkim1.jpg";
+import sikkim2 from "./Sikkim2.jpg";
+import sikkim3 from "./Sikkim3.jpg";
+import sikkim4 from "./Sikkim4.jpg";
+import goa1 from "./Goa1.jpg";
+import goa2 from "./Goa2.jpg";
+import goa3 from "./Goa3.jpg";
+import assamMeghalaya from "./Assam-Meghalaya.jpg";
+import meghalaya from "./Meghalaya.jpg";
+import assamMeghalayaArunachal from "./Assam-Meghalaya-Arunachal_Pradesh.jpg";
+import arunachal from "./Arunachal_Pradesh.jpg";
+import kerala1 from "./Kerala1.jpg";
+import kerala2 from "./Kerala2.jpg";
+import kerala3 from "./Kerala3.jpg";
+import kerala4 from "./Kerala4.jpg";
+import kerala5 from "./Kerala5.jpg";
+import himachal1 from "./Himachal1.jpg";
+import himachal2 from "./Himachal2.jpg";
+import himachal3 from "./Himachal3.jpg";
+import himachal4 from "./Himachal4.jpg";
+import himachal5 from "./Himachal5.jpg";
+import himachal6 from "./Himachal6.jpg";
+import rajasthan1 from "./Rajasthan1.jpg";
+import rajasthan2 from "./Rajasthan2.jpg";
+import rajasthan3 from "./Rajasthan3.jpg";
+import rajasthan4 from "./Rajasthan4.jpg";
+import rajasthan5 from "./Rajasthan5.jpg";
+import rajasthan6 from "./Rajasthan6.jpg";
+import leh1 from "./Leh1.jpg";
+import leh2 from "./Leh2.jpg";
+import leh3 from "./Leh3.jpg";
+
+export const icons = {
+  search_icon,
+  home2,
+  chooseTour,
+  rajasthan,
+  expertIcon,
+  holidayIcon,
+  headsetIcon,
+  moneyBagIcon,
+  facebook,
+  instagram,
+  xIcon,
+  linkedin,
+  whatsapp,
+  email,
+  madhovariLogo,
+};
 
 export const homeImages = [home, home2, chooseTour];
 
@@ -19,7 +87,7 @@ export const package_list = [
   {
     _id: "1",
     name: "Uttarakhand",
-    image: jaipur,
+    image: uttarakhand1,
     price: 500,
     description: "Ek Dhaam",
     day: "4 Nights 5 Days ",
@@ -57,7 +125,7 @@ export const package_list = [
   {
     _id: "2",
     name: "Uttarakhand",
-    image: jaipur,
+    image: uttarakhand2,
     price: 500,
     description: "Do Dhaam",
     day: "5 Nights 6 Days ",
@@ -100,7 +168,7 @@ export const package_list = [
   {
     _id: "3",
     name: "Uttarakhand",
-    image: jaipur,
+    image: uttarakhand3,
     price: 500,
     description: "Chaar Dhaam",
     day: "9 Nights 10 Days",
@@ -163,7 +231,7 @@ export const package_list = [
   {
     _id: "4",
     name: "Uttarakhand",
-    image: jaipur,
+    image: uttarakhand4,
     price: 500,
     description: "Chaar Dhaam",
     day: "4 Nights 5 Days",
@@ -201,7 +269,7 @@ export const package_list = [
   {
     _id: "5",
     name: "Uttarakhand",
-    image: jaipur,
+    image: uttarakhand5,
     price: 500,
     description: "Explore Uttarakhand",
     day: "6 Nights 7 Days",
@@ -249,7 +317,7 @@ export const package_list = [
   {
     _id: "6",
     name: "Kashmir",
-    image: jaipur,
+    image: kashmir1,
     price: 500,
     description: "Heaven of Earth",
     day: "5 Nights 6 Days",
@@ -292,7 +360,7 @@ export const package_list = [
   {
     _id: "7",
     name: "Kashmir",
-    image: jaipur,
+    image: kashmir2,
     price: 500,
     description: "Transquil Kashmir",
     day: "4 Nights 5 Days",
@@ -330,7 +398,7 @@ export const package_list = [
   {
     _id: "8",
     name: "Kashmir",
-    image: jaipur,
+    image: kashmir3,
     price: 500,
     description: "Divine Explorartion",
     day: "7 Nights 8 Days",
@@ -383,7 +451,7 @@ export const package_list = [
   {
     _id: "9",
     name: "Kashmir",
-    image: jaipur,
+    image: kashmir4,
     price: 500,
     description: "Off Beat Kashmir",
     day: "7 Nights 8 Days",
@@ -436,7 +504,7 @@ export const package_list = [
   {
     _id: "10",
     name: "Sikkim",
-    image: jaipur,
+    image: sikkim1,
     price: 500,
     description: "Small but beautiful",
     day: "3 Nights 4 Days",
@@ -469,7 +537,7 @@ export const package_list = [
   {
     _id: "11",
     name: "Sikkim",
-    image: jaipur,
+    image: sikkim2,
     price: 500,
     description: "High Altitude haven",
     day: "4 Nights 5 Days",
@@ -507,7 +575,7 @@ export const package_list = [
   {
     _id: "12",
     name: "Sikkim",
-    image: jaipur,
+    image: sikkim3,
     price: 500,
     description: "Serene Sikkim",
     day: "6 Nights 7 Days",
@@ -555,7 +623,7 @@ export const package_list = [
   {
     _id: "13",
     name: "Sikkim",
-    image: jaipur,
+    image: sikkim4,
     price: 500,
     description: "Explore Sikkim & Darjeeling",
     day: "8 Nights 9 Days",
@@ -613,7 +681,7 @@ export const package_list = [
   {
     _id: "14",
     name: "Goa",
-    image: jaipur,
+    image: goa1,
     price: 500,
     description: "Go Goa",
     day: "3 Nights 4 Days",
@@ -646,7 +714,7 @@ export const package_list = [
   {
     _id: "15",
     name: "Goa",
-    image: jaipur,
+    image: goa2,
     price: 500,
     description: "Blissful Beaches",
     day: "4 Nights 5 Days",
@@ -684,7 +752,7 @@ export const package_list = [
   {
     _id: "16",
     name: "Goa",
-    image: jaipur,
+    image: goa3,
     price: 500,
     description: "Majestic Goa",
     day: "5 Nights 6 Days",
@@ -727,7 +795,7 @@ export const package_list = [
   {
     _id: "17",
     name: "Assam-Meghalaya",
-    image: jaipur,
+    image: assamMeghalaya,
     price: 500,
     description: "Serene Assam & Meghalaya",
     day: "6 Nights 7 Days",
@@ -775,7 +843,7 @@ export const package_list = [
   {
     _id: "18",
     name: "Meghalaya",
-    image: jaipur,
+    image: meghalaya,
     price: 500,
     description: "Mystical Meghalaya",
     day: "5 Nights 6 Days",
@@ -818,7 +886,7 @@ export const package_list = [
   {
     _id: "19",
     name: "Assam-Meghalaya-Arunachal Pradesh",
-    image: jaipur,
+    image: assamMeghalayaArunachal,
     price: 500,
     description: "Enchanting Northeast",
     day: "13 Nights 14 Days",
@@ -901,7 +969,7 @@ export const package_list = [
   {
     _id: "20",
     name: "Arunachal Pradesh",
-    image: jaipur,
+    image: arunachal,
     price: 500,
     description: "Alluring Arunachal",
     day: "7 Nights 8 Days",
@@ -954,7 +1022,7 @@ export const package_list = [
   {
     _id: "21",
     name: "Kerala",
-    image: jaipur,
+    image: kerala1,
     price: 500,
     description: "Kerala Coastline",
     day: "3 Nights 4 Days",
@@ -987,7 +1055,7 @@ export const package_list = [
   {
     _id: "22",
     name: "Kerala",
-    image: jaipur,
+    image: kerala2,
     price: 500,
     description: "Colors of Kerela",
     day: "4 Nights 5 Days",
@@ -1025,7 +1093,7 @@ export const package_list = [
   {
     _id: "23",
     name: "Kerala",
-    image: jaipur,
+    image: kerala3,
     price: 500,
     description: "Serene Backwaters of Kerela",
     day: "5 Nights 6 Days",
@@ -1068,7 +1136,7 @@ export const package_list = [
   {
     _id: "24",
     name: "Kerala",
-    image: jaipur,
+    image: kerala4,
     price: 500,
     description: "Essence of Kerela",
     day: "6 Nights 7 Days",
@@ -1116,7 +1184,7 @@ export const package_list = [
   {
     _id: "25",
     name: "Kerala",
-    image: jaipur,
+    image: kerala5,
     price: 500,
     description: "Magical Paradises of Kerela",
     day: "7 Nights 8 Days",
@@ -1169,7 +1237,7 @@ export const package_list = [
   {
     _id: "26",
     name: "Himachal Pradesh",
-    image: jaipur,
+    image: himachal1,
     price: 500,
     description: "Magical Himachal",
     day: "3 Nights 4 Days",
@@ -1202,7 +1270,7 @@ export const package_list = [
   {
     _id: "27",
     name: "Himachal Pradesh",
-    image: jaipur,
+    image: himachal2,
     price: 500,
     description: "Himalayan Adventure",
     day: "4 Nights 5 Days",
@@ -1240,7 +1308,7 @@ export const package_list = [
   {
     _id: "28",
     name: "Himachal Pradesh",
-    image: jaipur,
+    image: himachal3,
     price: 500,
     description: "Himachal Delight",
     day: "5 Nights 6 Days",
@@ -1283,7 +1351,7 @@ export const package_list = [
   {
     _id: "29",
     name: "Himachal Pradesh",
-    image: jaipur,
+    image: himachal4,
     price: 500,
     description: "Snow capped Splendor",
     day: "6 Nights 7 Days",
@@ -1331,7 +1399,7 @@ export const package_list = [
   {
     _id: "30",
     name: "Himachal Pradesh",
-    image: jaipur,
+    image: himachal5,
     price: 500,
     description: "Himachal Heritage",
     day: "8 Nights 9 Days",
@@ -1389,7 +1457,7 @@ export const package_list = [
   {
     _id: "31",
     name: "Himachal Pradesh",
-    image: jaipur,
+    image: himachal6,
     price: 500,
     description: "Himachal Hues",
     day: "9 Nights 10 Days",
@@ -1452,7 +1520,7 @@ export const package_list = [
   {
     _id: "32",
     name: "Rajasthan",
-    image: jaipur,
+    image: rajasthan1,
     price: 500,
     description: "Oasis of Rajasthan",
     day: "4 Nights 5 Days",
@@ -1490,7 +1558,7 @@ export const package_list = [
   {
     _id: "33",
     name: "Rajasthan",
-    image: jaipur,
+    image: rajasthan2,
     price: 500,
     description: "Royal Rajasthan",
     day: "4 Nights 5 Days",
@@ -1528,7 +1596,7 @@ export const package_list = [
   {
     _id: "34",
     name: "Rajasthan",
-    image: jaipur,
+    image: rajasthan3,
     price: 500,
     description: "Rajasthan Desert Odyssey",
     day: "6 Nights 7 Days",
@@ -1576,7 +1644,7 @@ export const package_list = [
   {
     _id: "35",
     name: "Rajasthan",
-    image: jaipur,
+    image: rajasthan4,
     price: 500,
     description: "Rajasthan Heritage",
     day: "8 Nights 9 Days",
@@ -1634,7 +1702,7 @@ export const package_list = [
   {
     _id: "36",
     name: "Rajasthan",
-    image: jaipur,
+    image: rajasthan5,
     price: 500,
     description: "Rajasthan Luxury Escape",
     day: "9 Nights 10 Days",
@@ -1697,7 +1765,7 @@ export const package_list = [
   {
     _id: "37",
     name: "Rajasthan",
-    image: jaipur,
+    image: rajasthan6,
     price: 500,
     description: "Colors of Rajasthan",
     day: "10 Nights 11 Days",
@@ -1765,7 +1833,7 @@ export const package_list = [
   {
     _id: "38",
     name: "Leh Ladakh",
-    image: jaipur,
+    image: leh1,
     price: 500,
     description: "Ladhakh Quest",
     day: "5 Nights 6 Days",
@@ -1808,7 +1876,7 @@ export const package_list = [
   {
     _id: "39",
     name: "Leh Ladakh",
-    image: jaipur,
+    image: leh2,
     price: 500,
     description: "Ladakh Nomad trek",
     day: "6 Nights 7 Days",
@@ -1856,7 +1924,7 @@ export const package_list = [
   {
     _id: "40",
     name: "Leh Ladakh",
-    image: jaipur,
+    image: leh3,
     price: 500,
     description: "Beyond Boundaries",
     day: "7 Nights 8 Days",

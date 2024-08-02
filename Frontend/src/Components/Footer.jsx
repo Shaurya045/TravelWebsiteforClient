@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { icons } from "../assets/assets";
 
 function Footer({ use, setUse }) {
   return (
-    <div className="bg-sky-800 pt-[50px] text-[20px] text-white px-[80px] pb-[50px] flex flex-col items-center gap-[20px]">
+    <div className="bg-[#003366] pt-[50px] text-[20px] text-white px-[80px] pb-[50px] flex flex-col gap-[20px]">
       <div className="w-full grid grid-cols-[2fr_0.5fr_1.1fr_1fr] gap-[80px]">
-        <p className="text-white text-[50px] font-[600]">madhovari</p>
+        {/* <p className="text-white text-[50px] font-[600]">madhovari</p> */}
+        <img src={icons.madhovariLogo} alt="" />
         <div className="flex flex-col items-start gap-[10px]">
-          <h2 className="text-yellow-500 underline underline-offset-[6px] text-[25px]">
+          <h2 className="text-[#D4AF37] underline underline-offset-[6px] text-[24px] font-[400] font-['Lato']">
             Pages
           </h2>
           <ul className="list-none mb-[10px] text-[20px]">
@@ -20,7 +22,7 @@ function Footer({ use, setUse }) {
                     isActive && use === "home"
                       ? "text-orange-600"
                       : "text-white"
-                  } hover:text-orange-600`
+                  } hover:text-orange-600 text-[20px] font-[400] font-['Lato']`
                 }
               >
                 Home
@@ -31,7 +33,7 @@ function Footer({ use, setUse }) {
               onClick={() => setUse("about")}
               className={`${
                 use === "about" ? "text-orange-600" : "text-white"
-              } hover:text-orange-600`}
+              } hover:text-orange-600 text-[20px] font-[400] font-['Lato']`}
             >
               About
             </a>
@@ -44,7 +46,7 @@ function Footer({ use, setUse }) {
                     isActive 
                       ? "text-orange-600 "
                       : "text-white"
-                  } hover:text-orange-600`
+                  } hover:text-orange-600 text-[20px] font-[400] font-['Lato']`
                 }
               >
                 Packages
@@ -59,7 +61,7 @@ function Footer({ use, setUse }) {
                     isActive 
                       ? "text-orange-600 "
                       : "text-white"
-                  } hover:text-orange-600`
+                  } hover:text-orange-600 text-[20px] font-[400] font-['Lato']`
                 }
               >
                 Contact
@@ -77,25 +79,28 @@ function Footer({ use, setUse }) {
           </ul>
         </div>
         <div className="flex flex-col items-start gap-[10px]">
-          <h2 className="text-yellow-500 underline underline-offset-[6px] text-[25px]">Customer Support</h2>
+          <h2 className="text-[#D4AF37] underline underline-offset-[6px] text-[24px] font-[400] font-['Lato']">Customer Support</h2>
           <ul className="list-none mb-[10px] text-[20px]">
-            <li>Phone No.: (+91)99999 99999</li>
-            <li>Email: info@madhovari.in</li>
+            <li className="text-[20px] font-[400] font-['Lato']">Phone No.: (+91)99999 99999</li>
+            <li className="text-[20px] font-[400] font-['Lato']">Email: info@madhovari.in</li>
           </ul>
         </div>
         <div className="flex flex-col items-start gap-[10px]">
-          <h2 className="text-yellow-500 underline underline-offset-[6px] text-[25px]">Further Information</h2>
+          <h2 className="text-[#D4AF37] underline underline-offset-[6px] text-[24px] font-[400] font-['Lato']">Further Information</h2>
           <ul className="list-none mb-[10px] text-[20px]">
-            <li>Terms of use</li>
-            <li>Privacy Policy</li>
+            <li className="text-[20px] font-[400] font-['Lato']">Terms of use</li>
+            <li className="text-[20px] font-[400] font-['Lato']">Privacy Policy</li>
           </ul>
         </div>
       </div>
-      <hr className="w-full h-[1px] m-[20px_0] bg-gray-500 border-none" />
+      <hr className="w-full h-[1px] m-[20px_0] bg-[#666666] border-none" />
       <div className="flex flex-row justify-between">
-        <p>Copyright @ 2024 madhovari.in - All rights reserved</p>
-        <div className="flex flex-row">
-          <img src="" alt="" />
+        <p className="text-[#666666] font-['Lato']">Copyright &copy; 2024 madhovari.in - All rights reserved</p>
+        <div className="flex flex-row gap-[20px]">
+          <img src={icons.facebook} alt="" />
+          <img src={icons.instagram} alt="" />
+          <img src={icons.xIcon} alt="" />
+          <img src={icons.linkedin} alt="" />
         </div>
       </div>
     </div>

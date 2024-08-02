@@ -6,9 +6,9 @@ function PackageItemDisplay({ category, setCategory }) {
   return (
     <div className="mx-[70px] mt-[100px] mb-[50px] flex flex-row gap-[30px]">
       <div className="w-[30%]">
-        <ul className="flex flex-col gap-[10px] text-[20px] font-[400] bg-slate-200 p-[20px] rounded-[20px] ">
+        <ul className="flex flex-col gap-[10px] text-[20px] text-[#666666] font-[400] bg-[#66666620] p-[20px] rounded-[20px] ">
           <li
-            className={`cursor-pointer ${
+            className={`cursor-pointer font-["Merriweather"] ${
               category.toLowerCase() === "" ? "text-green-500" : ""
             }`}
             onClick={() => setCategory("")}
@@ -16,7 +16,7 @@ function PackageItemDisplay({ category, setCategory }) {
             All
           </li>
           <li
-            className={`cursor-pointer ${
+            className={`cursor-pointer font-["Merriweather"] ${
               category.toLowerCase() === "luxury" ? "text-green-500" : ""
             }`}
             onClick={() => setCategory("Luxury")}
@@ -24,7 +24,7 @@ function PackageItemDisplay({ category, setCategory }) {
             Luxury
           </li>
           <li
-            className={`cursor-pointer ${
+            className={`cursor-pointer font-["Merriweather"] ${
               category.toLowerCase() === "spiritual" ? "text-green-500" : ""
             }`}
             onClick={() => setCategory("Spiritual")}
@@ -32,7 +32,7 @@ function PackageItemDisplay({ category, setCategory }) {
             Spiritual
           </li>
           <li
-            className={`cursor-pointer ${
+            className={`cursor-pointer font-["Merriweather"] ${
               category.toLowerCase() === "adventure" ? "text-green-500" : ""
             }`}
             onClick={() => setCategory("Adventure")}
@@ -40,7 +40,7 @@ function PackageItemDisplay({ category, setCategory }) {
             Adventure
           </li>
           <li
-            className={`cursor-pointer ${
+            className={`cursor-pointer font-["Merriweather"] ${
               category.toLowerCase() === "off beat" ? "text-green-500" : ""
             }`}
             onClick={() => setCategory("Off Beat")}
@@ -48,7 +48,7 @@ function PackageItemDisplay({ category, setCategory }) {
             Off Beat
           </li>
           <li
-            className={`cursor-pointer ${
+            className={`cursor-pointer font-["Merriweather"] ${
               category.toLowerCase() === "ecotourism" ? "text-green-500" : ""
             }`}
             onClick={() => setCategory("Ecotourism")}
@@ -56,7 +56,7 @@ function PackageItemDisplay({ category, setCategory }) {
             Ecotourism
           </li>
           <li
-            className={`cursor-pointer ${
+            className={`cursor-pointer font-["Merriweather"] ${
               category.toLowerCase() === "wild life and nature"
                 ? "text-green-500"
                 : ""
@@ -66,7 +66,7 @@ function PackageItemDisplay({ category, setCategory }) {
             Wild Life and Nature
           </li>
           <li
-            className={`cursor-pointer ${
+            className={`cursor-pointer font-["Merriweather"] ${
               category.toLowerCase() === "cultural" ? "text-green-500" : ""
             }`}
             onClick={() => setCategory("Cultural")}
@@ -74,7 +74,7 @@ function PackageItemDisplay({ category, setCategory }) {
             Cultural
           </li>
           <li
-            className={`cursor-pointer ${
+            className={`cursor-pointer font-["Merriweather"] ${
               category.toLowerCase() === "heritage" ? "text-green-500" : ""
             }`}
             onClick={() => setCategory("Heritage")}

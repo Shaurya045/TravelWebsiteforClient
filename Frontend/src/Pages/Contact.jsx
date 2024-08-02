@@ -57,8 +57,8 @@ function Contact() {
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div className="glass flex flex-col items-center gap-[15px] mb-[40px] ">
-          <h2 className="mt-[30px] text-[30px] font-[600] ">Contact US</h2>
+        <div className="glass flex flex-col text-center justify-center gap-[15px] mb-[40px] ">
+          <h2 className="mt-[30px] text-[30px] font-[600] font-['Merriweather'] ">Contact US</h2>
           <form onSubmit={handleSubmit}>
             <div className="flex flex-col gap-[20px] mx-[50px] my-[20px] items-center">
               <div className="flex flex-row gap-[20px]">
@@ -97,7 +97,7 @@ function Contact() {
                 />
               </div>
               <textarea
-                className="p-[10px] text-[20px] rounded-[10px] w-[600px] h-[150px] "
+                className="p-[10px] text-[20px] rounded-[10px] w-[500px] h-[150px] "
                 rows="6"
                 value={formDetails.message}
                 placeholder="Write your Message here..."
@@ -105,7 +105,7 @@ function Contact() {
                 onChange={(e) => onFormUpdate("message", e.target.value)}
               ></textarea>
               <button
-                className="bg-blue-800 text-white text-[22px] w-[150px] h-[50px] rounded-[10px] my-[10px] duration-[0.5s] hover:scale-[1.05] "
+                className="bg-[#003366] text-white text-[22px] w-[150px] h-[50px] rounded-[10px] my-[10px] duration-[0.5s] hover:scale-[1.05] "
                 type="submit"
               >
                 <span>{buttonText}</span>

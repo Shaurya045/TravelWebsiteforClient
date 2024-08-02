@@ -40,10 +40,10 @@ function Header({ use, setUse }) {
                 className={` w-full h-full object-cover`}
               />
               <div className="absolute flex flex-col items-start gap-[1.5vw] max-w-[50%] bottom-[10%] left-[6vw] text-white">
-                <h2 className="text-[60px] font-[500]">
+                <h2 className="text-[60px] font-[500] font-['Merriweather']">
                   Plan your next trip today
                 </h2>
-                <p className="text-[25px]">
+                <p className="text-[25px] font-['Lato']">
                   madhovari is your new travel companion, we'll help you select
                   the best destinations to travel and be with you throughout
                   your trip.

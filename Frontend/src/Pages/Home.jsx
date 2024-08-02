@@ -24,8 +24,8 @@ function Home({ use, setUse }) {
             alt=""
           />
           <div className="absolute flex flex-col items-center top-[80px] left-[30%]">
-            <h2 className="text-[50px] font-[500] text-white">Let's Plan Your Next Trip</h2>
-            <h2 className="mt-[-10px] text-[40px] font-[500] text-white">To Your Dream Location.</h2>
+            <h2 className="text-[50px] font-[600] text-white font-['lato']">Let's Plan Your Next Trip</h2>
+            <h2 className="mt-[-10px] text-[40px] font-[600] text-white font-['lato']">To Your Dream Location.</h2>
             <div className=" pt-[50px] duration-[0.5s] hover:scale-[1.05]">
               <Button value="BOOK NOW" />
             </div>
