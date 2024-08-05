@@ -70,7 +70,7 @@ function Itinerary({ id, itinaray, name }) {
           ))}
         </div>
       </div>
-      <div className="w-full px-[50px] max-[680px]:px-[30px] ">
+      <div className="w-full px-[50px] max-[680px]:px-[30px] " id="booknow">
         <div
           className="relative w-full h-[400px] overflow-hidden bg-gray-300 rounded-[40px] max-[600px]:rounded-[20px] max-[550px]:h-[350px] "
           style={{
