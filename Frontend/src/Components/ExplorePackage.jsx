@@ -23,45 +23,55 @@ function ExplorePackage() {
   };
 
   return (
-    <div className="relative mt-[50px] mx-[5px] mb-[150px] max-w-[1500px]">
-      <h2 className="text-[40px] ml-[6vw] mb-[30px] font-['Merriweather'] ">Choose Your Package</h2>
+    <div className="mt-[100px] mb-[150px] flex flex-col gap-[50px] w-full">
+      <h2 className="text-[40px] max-[768px]:text-[30px] pl-[80px] max-[768px]:pl-[50px] font-['Merriweather'] ">
+        Choose Your Package
+      </h2>
 
-      <div className="relative overflow-hidden">
+      <div className="w-full h-[450px] max-[768px]:h-[400px] flex flex-row items-center">
         <button
           onClick={btnPressPrev}
-          className="border-none w-[100px] h-full absolute top-0 flex justify-center items-center"
+          className="border-none w-[100px] max-[768px]:w-[70px] h-full flex justify-center items-center"
         >
-          <span className="text-[50px] text-black ">&lt;</span>
-        </button>
-        <button
-          onClick={btnPressNext}
-          className="border-none w-[100px] h-full absolute top-0 flex justify-center items-center right-0"
-        >
-          <span className="text-[50px] text-black ">&gt;</span>
+          <span className="text-[50px] max-[768px]:text-[40px] text-black ">&lt;</span>
         </button>
         <div
           ref={boxRef}
-          className="product-container flex justify-between items-center gap-[20px] text-center mx-[100px] my-[20px] overflow-x-hidden overflow-hidden"
+          className="product-container h-full w-full flex flex-row gap-[40px] max-[768px]:gap-[15px] items-center text-center overflow-hidden "
         >
           {package_list.map((item, index) => {
-            return (
-              <div key={index} className="relative text-white rounded-[30px] ">
-                <div className="relative h-[450px] w-[305px] rounded-[30px] ">
-                  <img
-                    src={item.image}
-                    alt=""
-                    className="w-full h-full object-cover rounded-[30px] "
-                  />
+            if (index <= 14) {
+              return (
+                <div
+                  key={index}
+                  className="relative h-full text-white rounded-[30px] "
+                >
+                  <div className="h-full w-[305px] max-[768px]:w-[250px] rounded-[30px] ">
+                    <img
+                      loading="lazy"
+                      src={item.image}
+                      alt=""
+                      className="w-full h-full object-cover rounded-[30px] "
+                    />
+                  </div>
+                  <div className="absolute w-full bottom-[10%] mx-auto">
+                    <h2 className="text-[40px] max-[768px]:text-[33px] font-['Merriweather'] ">
+                      {item.name}
+                    </h2>
+                  </div>
                 </div>
-                <div className="absolute top-[350px] left-[20px]">
-                  <h2 className="text-[40px] font-['Merriweather'] ">{item.name}</h2>
-                </div>
-              </div>
-            );
+              );
+            }
           })}
         </div>
+        <button
+          onClick={btnPressNext}
+          className="border-none w-[100px] max-[768px]:w-[70px] h-full flex justify-center items-center"
+        >
+          <span className="text-[50px] max-[768px]:text-[40px] text-black ">&gt;</span>
+        </button>
       </div>
-      <div className="absolute left-[45%] bottom-[-80px] ">
+      <div className="mx-auto">
         <Button value="SEE ALL" />
       </div>
     </div>

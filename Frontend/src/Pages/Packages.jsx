@@ -6,7 +6,7 @@ import PackageItemDisplay from "../Components/PackageItemDisplay";
 function Packages() {
   const [category, setCategory] = useState("");
   return (
-    <div>
+    <div className="w-full ">
       <PackageHeader />
       <PackageDisplay category={category} setCategory={setCategory} />
       <PackageItemDisplay category={category} setCategory={setCategory} />

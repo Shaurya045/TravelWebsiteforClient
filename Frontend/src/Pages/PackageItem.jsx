@@ -14,16 +14,16 @@ function PackageItem() {
               <div>
                 <div
                   key={index}
-                  className="flex flex-row gap-[40px] items-center justify-center pt-[170px] pb-[90px] px-[130px]"
+                  className="flex flex-row max-[900px]:flex-col gap-[40px] items-center max-[900px]:items-start justify-center pt-[170px] pb-[90px] px-[130px] max-[900px]:px-[30px]"
                 >
-                  <div className="w-[350px] h-[470px]">
+                  <div className="w-[30%] max-[900px]:w-full h-[470px] max-[900px]:h-[350px]">
                     <img
                       className="w-full h-full object-cover rounded-[20px]"
                       src={item.image}
                       alt=""
                     />
                   </div>
-                  <div className="flex flex-col gap-[20px] max-w-[60%]">
+                  <div className="flex flex-col gap-[20px] w-[60%] max-[900px]:w-full">
                     <p className="text-[20px] text-[#666666] font-['Lato']">{item.description}</p>
                     <h2 className="text-white text-[50px] font-[500] font-['Merriweather']">
                       {item.name}

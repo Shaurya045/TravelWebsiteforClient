@@ -4,8 +4,8 @@ import { icons } from "../assets/assets";
 
 function Footer({ use, setUse }) {
   return (
-    <div className="bg-[#003366] pt-[50px] text-[20px] text-white px-[80px] pb-[50px] flex flex-col gap-[20px]">
-      <div className="w-full grid grid-cols-[2fr_0.5fr_1.1fr_1fr] gap-[80px]">
+    <div className="bg-[#003366] pt-[50px] text-[20px] text-white px-[40px] md:px-[80px] pb-[50px] flex flex-col gap-[20px] w-full overflow-hidden">
+      <div className="w-full gap-[20px] grid md:grid-cols-[2fr_0.5fr_1.1fr_1fr] md:gap-[40px] lg:gap-[80px]">
         {/* <p className="text-white text-[50px] font-[600]">madhovari</p> */}
         <img src={icons.madhovariLogo} alt="" />
         <div className="flex flex-col items-start gap-[10px]">
@@ -94,7 +94,7 @@ function Footer({ use, setUse }) {
         </div>
       </div>
       <hr className="w-full h-[1px] m-[20px_0] bg-[#666666] border-none" />
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-col gap-4 lg:flex-row justify-between">
         <p className="text-[#666666] font-['Lato']">Copyright &copy; 2024 madhovari.in - All rights reserved</p>
         <div className="flex flex-row gap-[20px]">
           <img src={icons.facebook} alt="" />

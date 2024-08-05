@@ -4,8 +4,8 @@ import ItemDisplay from "./ItemDisplay";
 
 function PackageItemDisplay({ category, setCategory }) {
   return (
-    <div className="mx-[70px] mt-[100px] mb-[50px] flex flex-row gap-[30px]">
-      <div className="w-[30%]">
+    <div className="mx-[50px] mt-[100px] mb-[50px] flex flex-row justify-center gap-[30px] max-[477px]:mx-[20px]">
+      <div className="w-[30%] max-[1024px]:hidden">
         <ul className="flex flex-col gap-[10px] text-[20px] text-[#666666] font-[400] bg-[#66666620] p-[20px] rounded-[20px] ">
           <li
             className={`cursor-pointer font-["Merriweather"] ${
@@ -83,7 +83,7 @@ function PackageItemDisplay({ category, setCategory }) {
           </li>
         </ul>
       </div>
-      <div className="flex flex-col gap-[30px] w-[80%]">
+      <div className="flex flex-col gap-[30px] w-[80%] max-[1024px]:w-full">
         {package_list
           .filter((item) => {
             if (category.trim() === "") {
