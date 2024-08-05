@@ -20,6 +20,7 @@ function PackageItem() {
                     <img
                       className="w-full h-full object-cover rounded-[20px]"
                       src={item.image}
+                      loading="lazy"
                       alt=""
                     />
                   </div>

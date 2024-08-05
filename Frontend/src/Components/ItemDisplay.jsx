@@ -5,7 +5,7 @@ function ItemDisplay({id, name, image, description, price, day}) {
   return (
     <div className='flex flex-row w-full bg-[#66666620] rounded-[20px] p-[40px] gap-[40px] items-start max-[680px]:flex-col max-[680px]:h-[700px] max-[577px]:h-[620px] max-[477px]:p-[20px] max-[477px]:h-[500px] max-[477px]:gap-[20px]'>
         <div className='w-[50%] h-[250px] overflow-hidden max-[680px]:h-[50%] max-[680px]:w-full'>
-            <img className=' w-full h-full object-cover rounded-[20px]' src={image} alt="" />
+            <img className=' w-full h-full object-cover rounded-[20px]' src={image} loading='lazy' alt="" />
         </div>
         <div className='flex flex-col w-[50%] gap-[20px] max-[680px]:h-[30%] max-[680px]:w-full max-[577px]:gap-[10px]'>
             <p className='text-[20px] font-["Lato"] text-[#666666] max-[477px]:text-[16px]'>{description}</p>

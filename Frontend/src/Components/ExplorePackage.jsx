@@ -33,7 +33,9 @@ function ExplorePackage() {
           onClick={btnPressPrev}
           className="border-none w-[100px] max-[768px]:w-[70px] h-full flex justify-center items-center"
         >
-          <span className="text-[50px] max-[768px]:text-[40px] text-black ">&lt;</span>
+          <span className="text-[50px] max-[768px]:text-[40px] text-black ">
+            &lt;
+          </span>
         </button>
         <div
           ref={boxRef}
@@ -48,8 +50,8 @@ function ExplorePackage() {
                 >
                   <div className="h-full w-[305px] max-[768px]:w-[250px] rounded-[30px] ">
                     <img
-                      loading="lazy"
                       src={item.image}
+                      loading="lazy"
                       alt=""
                       className="w-full h-full object-cover rounded-[30px] "
                     />
@@ -68,7 +70,9 @@ function ExplorePackage() {
           onClick={btnPressNext}
           className="border-none w-[100px] max-[768px]:w-[70px] h-full flex justify-center items-center"
         >
-          <span className="text-[50px] max-[768px]:text-[40px] text-black ">&gt;</span>
+          <span className="text-[50px] max-[768px]:text-[40px] text-black ">
+            &gt;
+          </span>
         </button>
       </div>
       <div className="mx-auto">

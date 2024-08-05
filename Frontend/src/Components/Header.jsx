@@ -36,6 +36,7 @@ function Header({ use, setUse }) {
             >
               <img
                 src={item}
+                loading="lazy"
                 alt=""
                 className="w-full h-full object-cover"
               />

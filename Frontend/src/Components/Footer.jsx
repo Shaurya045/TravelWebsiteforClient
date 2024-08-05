@@ -81,7 +81,7 @@ function Footer({ use, setUse }) {
         <div className="flex flex-col items-start gap-[10px]">
           <h2 className="text-[#D4AF37] underline underline-offset-[6px] text-[24px] font-[400] font-['Lato']">Customer Support</h2>
           <ul className="list-none mb-[10px] text-[20px]">
-            <li className="text-[20px] font-[400] font-['Lato']">Phone No.: (+91)99999 99999</li>
+            <li className="text-[20px] font-[400] font-['Lato']">Phone No.: (+91)91134 52352</li>
             <li className="text-[20px] font-[400] font-['Lato']">Email: info@madhovari.in</li>
           </ul>
         </div>

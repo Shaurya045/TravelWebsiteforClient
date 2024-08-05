@@ -49,7 +49,7 @@ function Contact() {
       >
         <div className="mx-[40px] mb-[20px] w-[95%] shadow-black shadow-[0px_30px_60px_-20px_rgba(0,0,0,0.37)] rounded-[20px] overflow-hidden">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7195.068936314497!2d85.09710686073036!3d25.62038121180862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed57e4e6d37fa7%3A0xe24791bb2082c760!2sPratap%20Library!5e0!3m2!1sen!2sin!4v1722356224050!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d476.41457181287814!2d85.09529302489938!3d25.624720861010168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1722894545649!5m2!1sen!2sin"
             width="100%"
             height="450"
             allowfullscreen=""

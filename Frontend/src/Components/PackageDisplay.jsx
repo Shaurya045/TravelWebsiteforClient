@@ -9,7 +9,7 @@ function PackageDisplay({ category, setCategory }) {
   return (
     <div className="w-[80%] absolute top-[420px] left-[10%] md:top-[660px] overflow-hidden">
       <div className="flex gap-[30px] bg-[#F0F0F0] w-full h-[80px] rounded-[30px] p-[30px] items-center justify-center max-[755px]:gap-[10px] max-[755px]:h-[60px] max-[755px]:p-[15px]">
-        <img className="w-[30px] h-[30px] max-[755px]:w-[18px] max-[755px]:h-[18px]" src={icons.search_icon} alt="" />
+        <img className="w-[30px] h-[30px] max-[755px]:w-[18px] max-[755px]:h-[18px]" src={icons.search_icon} loading="lazy" alt="" />
         <input
           value={category}
           onChange={handleInputChange}
