@@ -7,7 +7,7 @@ import expertIcon from "./Expert_Icon.png";
 import holidayIcon from "./Holiday_Icon.png";
 import headsetIcon from "./Headset_Icon.png";
 import moneyBagIcon from "./Money_Bag_Icon.png";
-import facebook from "./Facebook_Icon.png";
+// import facebook from "./Facebook_Icon.png";
 import instagram from "./Instagram_Icon.png";
 import xIcon from "./X_Icon.png";
 import linkedin from "./Linkedin_Icon.png";
@@ -73,7 +73,6 @@ export const icons = {
   holidayIcon,
   headsetIcon,
   moneyBagIcon,
-  facebook,
   instagram,
   xIcon,
   linkedin,
