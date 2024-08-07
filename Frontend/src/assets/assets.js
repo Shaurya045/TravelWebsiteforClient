@@ -13,6 +13,7 @@ import xIcon from "./X_Icon.png";
 import linkedin from "./Linkedin_Icon.png";
 import whatsapp from "./WhatsApp_Icon.png";
 import email from "./Email_Icon.png";
+import phone from "./Phone_Icon.png";
 import madhovariLogo from "./madhovari_Logo.png";
 
 import jaipur from "./images/Jaipur.jpg";
@@ -78,6 +79,7 @@ export const icons = {
   linkedin,
   whatsapp,
   email,
+  phone,
   madhovariLogo,
 };
 

@@ -45,7 +45,7 @@ function Header({ use, setUse }) {
                   Plan your next trip today
                 </h2>
                 <p className="text-[25px] max-[640px]:text-[20px] font-['Lato']">
-                  Madhovari is your new travel companion, we'll help you select
+                  Madhavori is your new travel companion, we'll help you select
                   the best destinations to travel and be with you throughout
                   your trip.
                 </p>

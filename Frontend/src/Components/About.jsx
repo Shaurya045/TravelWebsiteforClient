@@ -17,7 +17,7 @@ function About() {
       </div>
       <div className="flex flex-col gap-[30px] w-[60%] max-[1024px]:w-full ">
         <h2 className="text-[50px] font-[500] font-['Merriweather'] max-[527px]:text-[30px]">
-          About Madhovari
+          About Madhavori
         </h2>
         <div className="w-full h-[400px] bg-gray-300 rounded-[20px] min-[1025px]:hidden">
           <img
@@ -27,7 +27,7 @@ function About() {
           />
         </div>
         <p className="text-[#666666] text-[25px] max-[527px]:text-[22px] w-full font-[400] font-['Lato']">
-          Welcome to Madhovari, your ultimate travel companion. We specialize in
+          Welcome to Madhavori, your ultimate travel companion. We specialize in
           crafting personalized tour packages that cater to your unique travel
           desires. Our mission is to turn your travel dreams into reality with
           high-quality, hassle-free services.
@@ -35,12 +35,12 @@ function About() {
         <p className="text-[#666666] text-[25px] max-[527px]:text-[22px] w-full font-[400] font-['Lato']">
           Discover a wide range of destinations, from the majestic Himalayas to
           serene beaches, all with the expert guidance of our dedicated team. At
-          Madhovari, we value customer satisfaction, integrity, and sustainable
+          Madhavori, we value customer satisfaction, integrity, and sustainable
           tourism practices.
         </p>
         <p className="text-[#666666] text-[25px] max-[527px]:text-[22px] w-full font-[400] font-['Lato']">
           Join us on a journey where every trip is a new story waiting to be
-          told. Explore the world with Madhovari and create memories that last a
+          told. Explore the world with Madhavori and create memories that last a
           lifetime.
         </p>
       </div>
