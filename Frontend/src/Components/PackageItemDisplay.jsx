@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import UserContext from "./Context/UserContext";
 import { package_list } from "../assets/assets";
 import ItemDisplay from "./ItemDisplay";
 
-function PackageItemDisplay({ category, setCategory, filterVisible }) {
+function PackageItemDisplay({ filterVisible }) {
+  const { category, setCategory } = useContext(UserContext);
   return (
     <div className="max-[1024px]:relative mx-[50px] mt-[100px] mb-[50px] flex flex-row justify-center gap-[30px] max-[477px]:mx-[20px]">
       <div className="w-[30%] max-[1024px]:hidden ">
@@ -163,7 +165,11 @@ function PackageItemDisplay({ category, setCategory, filterVisible }) {
           </ul>
         </div>
       )}
-      <div className={`flex flex-col ${filterVisible ? "max-[1024px]:mt-[370px]":""}  gap-[30px] w-[80%] max-[1024px]:w-full`}>
+      <div
+        className={`flex flex-col ${
+          filterVisible ? "max-[1024px]:mt-[370px]" : ""
+        }  gap-[30px] w-[80%] max-[1024px]:w-full`}
+      >
         {package_list
           .filter((item) => {
             if (category.trim() === "") {

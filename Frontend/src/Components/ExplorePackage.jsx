@@ -1,8 +1,11 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, useContext } from "react";
+import UserContext from "./Context/UserContext";
 import { package_list } from "../assets/assets";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 function ExplorePackage() {
+  const {category, setCategory} = useContext(UserContext);
   const [scrollLeft, setScrollLeft] = useState(0);
   const boxRef = useRef(null);
   const [isTouching, setIsTouching] = useState(false);
@@ -87,21 +90,26 @@ function ExplorePackage() {
           className="product-container h-full w-full flex flex-row gap-[40px] max-[768px]:gap-[15px] items-center text-center overflow-x-scroll scrollbar-hide"
         >
           {uniquePackages.map((item, index) => (
-            <div key={index} className="relative h-full text-white rounded-[30px]">
-              <div className="h-full w-[305px] max-[768px]:w-[250px] rounded-[30px]">
-                <img
-                  src={item.image}
-                  loading="lazy"
-                  alt=""
-                  className="w-full h-full object-cover rounded-[30px]"
-                />
+            <Link to="/package" className="h-full" onClick={()=>setCategory(item.name)} >
+              <div
+                key={index}
+                className="relative h-full text-white rounded-[30px]"
+              >
+                <div className="h-full w-[305px] max-[768px]:w-[250px] rounded-[30px]">
+                  <img
+                    src={item.image}
+                    loading="lazy"
+                    alt=""
+                    className="w-full h-full object-cover rounded-[30px]"
+                  />
+                </div>
+                <div className="absolute w-full bottom-[10%] mx-auto">
+                  <h2 className="text-[40px] max-[768px]:text-[33px] font-['Merriweather']">
+                    {item.name}
+                  </h2>
+                </div>
               </div>
-              <div className="absolute w-full bottom-[10%] mx-auto">
-                <h2 className="text-[40px] max-[768px]:text-[33px] font-['Merriweather']">
-                  {item.name}
-                </h2>
-              </div>
-            </div>
+            </Link>
           ))}
         </div>
         <button

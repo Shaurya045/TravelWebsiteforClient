@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import UserContext from "./Context/UserContext";
 import { icons } from "../assets/assets";
 
-function PackageDisplay({ category, setCategory, setFilterVisible }) {
+function PackageDisplay({ setFilterVisible }) {
+  const { category, setCategory } = useContext(UserContext);
   const handleInputChange = (e) => {
     setCategory(e.target.value);
   };

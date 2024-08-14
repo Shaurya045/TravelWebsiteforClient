@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
+import UserContextProvider from "./Components/Context/UserContextProvider";
 import Navbar from "./Components/Navbar";
 import { Outlet } from "react-router-dom";
 import Footer from "./Components/Footer";
@@ -10,8 +11,9 @@ import { icons } from "./assets/assets";
 function App() {
   const [use, setUse] = useState("home");
   return (
-    <>
+    <UserContextProvider>
       <ScrollTop />
+
       <Navbar use={use} setUse={setUse} />
       <div className="z-20 fixed bottom-[10%] right-[5%] flex flex-col gap-[10px]">
         <a href="tel: +918210080108">
@@ -34,7 +36,7 @@ function App() {
         <Footer use={use} setUse={setUse} />
       </div>
       <Analytics />
-    </>
+    </UserContextProvider>
   );
 }
 
