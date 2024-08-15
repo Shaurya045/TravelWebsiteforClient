@@ -16,13 +16,13 @@ function App() {
 
       <Navbar use={use} setUse={setUse} />
       <div className="z-20 fixed bottom-[10%] right-[5%] flex flex-col gap-[10px]">
-        <a href="tel: +918210080108">
+        <a href="tel: +919113452352">
           <div className="w-[60px] h-[60px] bg-sky-400 rounded-[50%] flex flex-row justify-center items-center md:hidden">
             <img className="w-[60px]" src={icons.phone} alt="" />
           </div>
         </a>
         <a
-          href={`https://wa.me/918210080108?text=Hi, I want to know more information for the trip `}
+          href={`https://wa.me/919113452352?text=Hi, I want to know more information for the trip `}
           target="_blank"
           rel="noopener noreferrer"
         >

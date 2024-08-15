@@ -45,8 +45,8 @@ function Itinerary({ id, itinaray, name }) {
                   index % 2 === 0 ? "left-[400px]" : "left-[-97px]"
                 } absolute right-[-20px] top-[32px] z-10 max-[810px]:left-[-23px]`}
               >
-                <div className="relative w-[100px] max-[810px]:w-[60px] h-[100px] max-[810px]:h-[60px] rounded-[50%] bg-[#D9D9D9] text-center">
-                  <h2 className="absolute top-[34%] max-[810px]:top-[30%] left-[21%] max-[810px]:left-[20%] text-[22px] max-[810px]:text-[16px] text-[#333333] font-[400] font-['Merriweather'] ">
+                <div className="relative w-[100px] max-[810px]:w-[65px] h-[100px] max-[810px]:h-[65px] rounded-[50%] bg-[#D9D9D9] text-center">
+                  <h2 className="absolute top-[34%] max-[810px]:top-[32%] left-[21%] max-[810px]:left-[18%] text-[22px] max-[810px]:text-[16px] text-[#333333] font-[400] font-['Merriweather'] ">
                     Day {item.day}
                   </h2>
                 </div>
@@ -85,7 +85,7 @@ function Itinerary({ id, itinaray, name }) {
             </h2>
             <div className="flex flex-row max-[600px]:flex-col gap-[100px] max-[600px]:gap-[20px]">
               <a
-                href={`https://wa.me/918210080108?text=Hello, I want more detail for ${name} tour package with id as ${id}.`}
+                href={`https://wa.me/919113452352?text=Hello, I want more detail for ${name} tour package with id as ${id}.`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

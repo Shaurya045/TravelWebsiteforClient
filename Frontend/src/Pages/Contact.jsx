@@ -42,7 +42,7 @@ function Contact() {
     }
   };
   return (
-    <div className="bg-gray-200 ">
+    <div className="bg-[#33333360]">
       <div
         className="flex flex-col pt-[150px] items-center gap-[40px]"
         id="contact"
@@ -57,13 +57,13 @@ function Contact() {
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div className="glass flex flex-col w-[80%] text-center justify-center gap-[15px] mb-[40px] ">
-          <h2 className="mt-[30px] text-[30px] font-[600] font-['Merriweather'] ">Contact US</h2>
+        <div className="glass bg-[#ffffffda] flex flex-col w-[80%] text-center justify-center gap-[15px] mb-[40px] ">
+          <h2 className="mt-[30px] text-[30px] text-gray-500 font-[600] font-['Merriweather'] ">Contact US</h2>
           <form onSubmit={handleSubmit}>
-            <div className="flex flex-col gap-[20px] mx-[20px] md:mx-[50px] my-[20px] items-center justify-center">
-              <div className="flex flex-col w-full md:flex-row gap-[20px]">
+            <div className="flex flex-col gap-[30px] mx-[20px] md:mx-[50px] my-[20px] items-center justify-center">
+              <div className="flex flex-col w-full md:flex-row gap-[30px]">
                 <input
-                  className="p-[10px] md:text-[20px] w-full rounded-[10px]"
+                  className="px-[10px] text-gray-500 md:text-[20px] w-full block rounded-[10px bg-transparent border-0 border-b-2 border-b-gray-400 focus:outline-none focus:ring-0 focus:border-gray-500  "
                   type="text"
                   value={formDetails.firstName}
                   placeholder="First Name"
@@ -71,16 +71,16 @@ function Contact() {
                   onChange={(e) => onFormUpdate("firstName", e.target.value)}
                 />
                 <input
-                  className="p-[10px] md:text-[20px] w-full rounded-[10px]"
+                  className="px-[10px] text-gray-500 md:text-[20px] w-full block rounded-[10px bg-transparent border-0 border-b-2 border-b-gray-400 focus:outline-none focus:ring-0 focus:border-gray-500"
                   type="text"
                   value={formDetails.lastName}
                   placeholder="Last Name"
                   onChange={(e) => onFormUpdate("lastName", e.target.value)}
                 />
               </div>
-              <div className="flex flex-col w-full md:flex-row gap-[20px]">
+              <div className="flex flex-col w-full md:flex-row gap-[30px]">
                 <input
-                  className="p-[10px] md:text-[20px] w-full rounded-[10px]"
+                  className="px-[10px] text-gray-500 md:text-[20px] w-full block rounded-[10px bg-transparent border-0 border-b-2 border-b-gray-400 focus:outline-none focus:ring-0 focus:border-gray-500"
                   type="email"
                   value={formDetails.email}
                   placeholder="Email Address"
@@ -88,7 +88,7 @@ function Contact() {
                   onChange={(e) => onFormUpdate("email", e.target.value)}
                 />
                 <input
-                  className="p-[10px] md:text-[20px] w-full rounded-[10px]"
+                  className="px-[10px] text-gray-500 md:text-[20px] w-full block rounded-[10px bg-transparent border-0 border-b-2 border-b-gray-400 focus:outline-none focus:ring-0 focus:border-gray-500"
                   type="phone"
                   value={formDetails.phone}
                   placeholder="Phone No."
@@ -97,7 +97,7 @@ function Contact() {
                 />
               </div>
               <textarea
-                className="p-[10px] md:text-[20px] rounded-[10px] w-full h-[150px] "
+                className="px-[10px] text-gray-500 md:text-[20px] w-full block rounded-[10px bg-transparent border-0 border-b-2 border-b-gray-400 focus:outline-none focus:ring-0 focus:border-gray-500 "
                 rows="6"
                 value={formDetails.message}
                 placeholder="Write your Message here..."
